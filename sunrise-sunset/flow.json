@@ -1,0 +1,365 @@
+[
+    {
+        "id": "cf56ea47efc2ac18",
+        "type": "tab",
+        "label": "Sunrise-Sunset",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "42081f2590febaed",
+        "type": "group",
+        "z": "cf56ea47efc2ac18",
+        "name": "Set camera user and password by double clicking the node",
+        "style": {
+            "stroke": "#001f60",
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "e68cc596b7b76d47"
+        ],
+        "x": 934,
+        "y": 119,
+        "w": 375,
+        "h": 82
+    },
+    {
+        "id": "6b9eba11ea593db1",
+        "type": "group",
+        "z": "cf56ea47efc2ac18",
+        "name": "Set your camera address list by double-clicking the node",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "0cbda0458c93dde1"
+        ],
+        "x": 134,
+        "y": 39,
+        "w": 359,
+        "h": 82
+    },
+    {
+        "id": "4a79ec3312dc606b",
+        "type": "junction",
+        "z": "cf56ea47efc2ac18",
+        "x": 900,
+        "y": 160,
+        "wires": [
+            [
+                "e68cc596b7b76d47"
+            ]
+        ]
+    },
+    {
+        "id": "3c420d077bf4924b",
+        "type": "suncron",
+        "z": "cf56ea47efc2ac18",
+        "name": "",
+        "location": "888e3e9c4f6731c5",
+        "sunEventType": "sunrise",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "offset": 0,
+        "x": 270,
+        "y": 160,
+        "wires": [
+            [
+                "2ed92f14bea19cd3"
+            ]
+        ]
+    },
+    {
+        "id": "df570f50126143e8",
+        "type": "inject",
+        "z": "cf56ea47efc2ac18",
+        "name": "Test",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "2ed92f14bea19cd3"
+            ]
+        ]
+    },
+    {
+        "id": "ea74299da2672b8c",
+        "type": "split",
+        "z": "cf56ea47efc2ac18",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 590,
+        "y": 160,
+        "wires": [
+            [
+                "cbae0aa48e6d0f7e"
+            ]
+        ]
+    },
+    {
+        "id": "20fb95f4a5031bd7",
+        "type": "suncron",
+        "z": "cf56ea47efc2ac18",
+        "name": "",
+        "location": "888e3e9c4f6731c5",
+        "sunEventType": "sunset",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "offset": 0,
+        "x": 270,
+        "y": 220,
+        "wires": [
+            [
+                "4c292f89f0249e0f"
+            ]
+        ]
+    },
+    {
+        "id": "0c83e282eec71c25",
+        "type": "split",
+        "z": "cf56ea47efc2ac18",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 590,
+        "y": 220,
+        "wires": [
+            [
+                "2735f4f4ba5596d6"
+            ]
+        ]
+    },
+    {
+        "id": "0217c6cc5ddaf5c1",
+        "type": "link in",
+        "z": "cf56ea47efc2ac18",
+        "name": "Camera List",
+        "links": [],
+        "x": 65,
+        "y": 80,
+        "wires": [
+            [
+                "0cbda0458c93dde1"
+            ]
+        ]
+    },
+    {
+        "id": "6b99f40f15531900",
+        "type": "link out",
+        "z": "cf56ea47efc2ac18",
+        "name": "link out 7",
+        "mode": "return",
+        "links": [],
+        "x": 535,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "2ed92f14bea19cd3",
+        "type": "link call",
+        "z": "cf56ea47efc2ac18",
+        "name": "",
+        "links": [
+            "0217c6cc5ddaf5c1"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 430,
+        "y": 160,
+        "wires": [
+            [
+                "ea74299da2672b8c"
+            ]
+        ]
+    },
+    {
+        "id": "4c292f89f0249e0f",
+        "type": "link call",
+        "z": "cf56ea47efc2ac18",
+        "name": "",
+        "links": [
+            "0217c6cc5ddaf5c1"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 430,
+        "y": 220,
+        "wires": [
+            [
+                "0c83e282eec71c25"
+            ]
+        ]
+    },
+    {
+        "id": "2af07b1a9c4b6e16",
+        "type": "inject",
+        "z": "cf56ea47efc2ac18",
+        "name": "Test",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "4c292f89f0249e0f"
+            ]
+        ]
+    },
+    {
+        "id": "a40e68f3fd747004",
+        "type": "debug",
+        "z": "cf56ea47efc2ac18",
+        "name": "debug 43",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1440,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "cbae0aa48e6d0f7e",
+        "type": "function",
+        "z": "cf56ea47efc2ac18",
+        "name": "Enable WDR",
+        "func": "msg.url = 'http://' + msg.payload + '/axis-cgi/param.cgi';\nmsg.payload = 'action=update&root.ImageSource.I0.Sensor.WDR=on';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 160,
+        "wires": [
+            [
+                "4a79ec3312dc606b"
+            ]
+        ]
+    },
+    {
+        "id": "2735f4f4ba5596d6",
+        "type": "function",
+        "z": "cf56ea47efc2ac18",
+        "name": "Disable WDR",
+        "func": "msg.url = 'http://' + msg.payload + '/axis-cgi/param.cgi';\nmsg.payload = 'action=update&root.ImageSource.I0.Sensor.WDR=off';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 220,
+        "wires": [
+            [
+                "4a79ec3312dc606b"
+            ]
+        ]
+    },
+    {
+        "id": "e68cc596b7b76d47",
+        "type": "http request",
+        "z": "cf56ea47efc2ac18",
+        "g": "42081f2590febaed",
+        "name": "POST to cameras",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "digest",
+        "senderr": false,
+        "headers": [],
+        "x": 1050,
+        "y": 160,
+        "wires": [
+            [
+                "a40e68f3fd747004"
+            ]
+        ]
+    },
+    {
+        "id": "0cbda0458c93dde1",
+        "type": "template",
+        "z": "cf56ea47efc2ac18",
+        "g": "6b9eba11ea593db1",
+        "name": "Camera Address List",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "[\n  \"1.2.3.4\",\n  \"my.camera.com\"\n]",
+        "output": "json",
+        "x": 260,
+        "y": 80,
+        "wires": [
+            [
+                "6b99f40f15531900"
+            ]
+        ]
+    },
+    {
+        "id": "888e3e9c4f6731c5",
+        "type": "suncron-location",
+        "name": "Lund",
+        "lat": "55",
+        "lon": "13"
+    }
+]
