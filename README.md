@@ -4,4 +4,4 @@ A library of practical flows ("recipes") for Axis cameras, making automation eas
 
 ## Recipes
 
-- [Enable/Disable WDR on Sunrise/Sunset](recipes/wdr-sunrise-sunset/README.md): Automatically turn WDR on at sunrise and off at sunset, for optimal image in day/night lighting.
+- [Enable/Disable WDR on Sunrise/Sunset](recipes/sunrise-sunset/README.md): Automatically turn WDR on at sunrise and off at sunset, for optimal image in day/night lighting.
