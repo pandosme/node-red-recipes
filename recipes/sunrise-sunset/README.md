@@ -37,5 +37,6 @@ Automatically enables Wide Dynamic Range (WDR) for Axis cameras at sunrise, and 
 - Axis cameras with HTTP API enabled
 
 ---
-
+<br/>
+![image](https://api.juhlin.me/image/flow-sunrise-sunset)
 

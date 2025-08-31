@@ -1,0 +1,1237 @@
+[
+    {
+        "id": "51c0249ad6358e79",
+        "type": "tab",
+        "label": "Export SD-Card recordings",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a710609431dd3f20",
+        "type": "group",
+        "z": "51c0249ad6358e79",
+        "name": "Get recordings list from cameras",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#d1d1d1",
+            "color": "#000000"
+        },
+        "nodes": [
+            "d5dd5f42cbb1481e",
+            "f2dbde127b13621e",
+            "5e7cd1cc8ac419e2",
+            "eb97ac08297b132c",
+            "xml1",
+            "function1",
+            "5e8c641feb97721e",
+            "1c52b4a48004699b",
+            "split1",
+            "0c6dddae8ea3386c",
+            "72a14da42b56b7d7"
+        ],
+        "x": 168,
+        "y": 213,
+        "w": 1258,
+        "h": 208
+    },
+    {
+        "id": "79e60d8e5ad27335",
+        "type": "group",
+        "z": "51c0249ad6358e79",
+        "name": "Export recording (Matroska)",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#d1d1d1",
+            "color": "#000000"
+        },
+        "nodes": [
+            "4313ee30f0e633a0",
+            "bc7af0d2002dbab1",
+            "fa63f574dac8ed05",
+            "ba822825b6147c01",
+            "60f83e2fe965a23b"
+        ],
+        "x": 174,
+        "y": 433,
+        "w": 1472,
+        "h": 134
+    },
+    {
+        "id": "7153051292f2dd8a",
+        "type": "group",
+        "z": "51c0249ad6358e79",
+        "name": "Save and convert MKV to MP4",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#d1d1d1",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "383b563e8309e460",
+            "f1b76e10e101481d",
+            "34beab97ed0b112b",
+            "4ed3c3b5fa26c859",
+            "ada30ad7701a0512",
+            "eb8457e019898710",
+            "8e39fdc6f2841e71"
+        ],
+        "x": 174,
+        "y": 591.5,
+        "w": 1432,
+        "h": 97
+    },
+    {
+        "id": "33332336d55ce9ec",
+        "type": "group",
+        "z": "51c0249ad6358e79",
+        "name": "Remove recording from camera",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#d1d1d1",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "4378143688e92568",
+            "4698ba2f31377cb8"
+        ],
+        "x": 174,
+        "y": 713,
+        "w": 641,
+        "h": 134
+    },
+    {
+        "id": "a5bc4ba6e4ab8c54",
+        "type": "group",
+        "z": "51c0249ad6358e79",
+        "name": "Updated the index file (recordings.json)",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#d1d1d1",
+            "color": "#000000"
+        },
+        "nodes": [
+            "d9000dc95e47a1ea",
+            "ea4a0683d9a56b9e",
+            "31d5a9061d31581c",
+            "8f72863dfe8a9ed6",
+            "65ce4b0554f5db50",
+            "527bcc561a33c0e1"
+        ],
+        "x": 174,
+        "y": 859,
+        "w": 1372,
+        "h": 82
+    },
+    {
+        "id": "4196609156173f07",
+        "type": "group",
+        "z": "51c0249ad6358e79",
+        "name": "Initialize flow",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#d1d1d1",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "7a89deec31ad1f1b",
+            "dcf785ae6b632aa5",
+            "9bf01144cd1ebf73"
+        ],
+        "x": 414,
+        "y": 119,
+        "w": 752,
+        "h": 82
+    },
+    {
+        "id": "2a8dd2dea13cc98c",
+        "type": "group",
+        "z": "51c0249ad6358e79",
+        "name": "Exception management",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffbfbf",
+            "label": true
+        },
+        "nodes": [
+            "681ea8d85af76c41",
+            "699a634e439a01f0",
+            "ed66bd9b9be2826c",
+            "df86d69e36771d72"
+        ],
+        "x": 174,
+        "y": 959,
+        "w": 492,
+        "h": 142
+    },
+    {
+        "id": "5e7cd1cc8ac419e2",
+        "type": "group",
+        "z": "51c0249ad6358e79",
+        "g": "a710609431dd3f20",
+        "name": "Set your camera address list by double-clicking the node",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "cd654b9b4972b139"
+        ],
+        "x": 194,
+        "y": 239,
+        "w": 359,
+        "h": 82
+    },
+    {
+        "id": "eb97ac08297b132c",
+        "type": "group",
+        "z": "51c0249ad6358e79",
+        "g": "a710609431dd3f20",
+        "name": "Set camera user and password by double clicking the node",
+        "style": {
+            "stroke": "#001f60",
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "334cdb01f92a1c44"
+        ],
+        "x": 954,
+        "y": 239,
+        "w": 375,
+        "h": 82
+    },
+    {
+        "id": "ba822825b6147c01",
+        "type": "group",
+        "z": "51c0249ad6358e79",
+        "g": "79e60d8e5ad27335",
+        "name": "Set camera user and password by double clicking the node",
+        "style": {
+            "stroke": "#001f60",
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "7b633c6f165e1afe"
+        ],
+        "x": 694,
+        "y": 459,
+        "w": 375,
+        "h": 82
+    },
+    {
+        "id": "4698ba2f31377cb8",
+        "type": "group",
+        "z": "51c0249ad6358e79",
+        "g": "33332336d55ce9ec",
+        "name": "Set camera user and password by double clicking the node",
+        "style": {
+            "stroke": "#001f60",
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "68635abb6dd3253c"
+        ],
+        "x": 414,
+        "y": 739,
+        "w": 375,
+        "h": 82
+    },
+    {
+        "id": "inject1",
+        "type": "inject",
+        "z": "51c0249ad6358e79",
+        "name": "Start (manual or schedule)",
+        "props": [],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "x": 280,
+        "y": 160,
+        "wires": [
+            [
+                "7a89deec31ad1f1b"
+            ]
+        ]
+    },
+    {
+        "id": "xml1",
+        "type": "xml",
+        "z": "51c0249ad6358e79",
+        "g": "a710609431dd3f20",
+        "name": "Parse Recording List",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 400,
+        "y": 380,
+        "wires": [
+            [
+                "function1"
+            ]
+        ]
+    },
+    {
+        "id": "function1",
+        "type": "function",
+        "z": "51c0249ad6358e79",
+        "g": "a710609431dd3f20",
+        "name": "Extract Recording IDs",
+        "func": "var formatFromHell = msg.payload.root.recordings[0].recording;\nvar recordings = [];\nformatFromHell.forEach(function(item) {\n    var recording = {\n        camera: msg.cameraAddress,\n        id: item[\"$\"].recordingid,\n        disk: item[\"$\"].diskid,\n        event: item[\"$\"].eventid,\n        start: new Date(item[\"$\"].starttime).getTime(),\n        stop: new Date(item[\"$\"].stoptime).getTime(),\n        resolution: item.video[0][\"$\"].resolution,\n        framerate: parseInt(item.video[0][\"$\"].framerate.split(\":\")[0])\n    }\n    recording.duration = (recording.stop - recording.start)/1000;\n    recordings.push(recording)\n});\nmsg.payload = recordings;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 380,
+        "wires": [
+            [
+                "split1"
+            ]
+        ]
+    },
+    {
+        "id": "split1",
+        "type": "split",
+        "z": "51c0249ad6358e79",
+        "g": "a710609431dd3f20",
+        "name": "Split per recording",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": "1",
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 910,
+        "y": 380,
+        "wires": [
+            [
+                "72a14da42b56b7d7"
+            ]
+        ]
+    },
+    {
+        "id": "d5dd5f42cbb1481e",
+        "type": "function",
+        "z": "51c0249ad6358e79",
+        "g": "a710609431dd3f20",
+        "name": "Request Recording list",
+        "func": "msg.cameraAddress = msg.payload;\nmsg.url = 'http://' + msg.payload + '/axis-cgi/record/list.cgi';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 280,
+        "wires": [
+            [
+                "334cdb01f92a1c44"
+            ]
+        ]
+    },
+    {
+        "id": "cd654b9b4972b139",
+        "type": "template",
+        "z": "51c0249ad6358e79",
+        "g": "5e7cd1cc8ac419e2",
+        "name": "Camera Address List",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "[\n  \"front.internal\"\n]",
+        "output": "json",
+        "x": 320,
+        "y": 280,
+        "wires": [
+            [
+                "f2dbde127b13621e"
+            ]
+        ]
+    },
+    {
+        "id": "f2dbde127b13621e",
+        "type": "split",
+        "z": "51c0249ad6358e79",
+        "g": "a710609431dd3f20",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 630,
+        "y": 280,
+        "wires": [
+            [
+                "d5dd5f42cbb1481e"
+            ]
+        ]
+    },
+    {
+        "id": "334cdb01f92a1c44",
+        "type": "http request",
+        "z": "51c0249ad6358e79",
+        "g": "eb97ac08297b132c",
+        "name": "GET /axis-cgi/record/list.cgi",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "digest",
+        "senderr": true,
+        "headers": [],
+        "x": 1100,
+        "y": 280,
+        "wires": [
+            [
+                "5e8c641feb97721e"
+            ]
+        ]
+    },
+    {
+        "id": "b14a6e8383b75b9c",
+        "type": "link out",
+        "z": "51c0249ad6358e79",
+        "name": "Recording Description",
+        "mode": "link",
+        "links": [
+            "407bf0370558e23f"
+        ],
+        "x": 1485,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "5e8c641feb97721e",
+        "type": "link out",
+        "z": "51c0249ad6358e79",
+        "g": "a710609431dd3f20",
+        "name": "link out 11",
+        "mode": "link",
+        "links": [
+            "1c52b4a48004699b"
+        ],
+        "x": 1385,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "1c52b4a48004699b",
+        "type": "link in",
+        "z": "51c0249ad6358e79",
+        "g": "a710609431dd3f20",
+        "name": "link in 3",
+        "links": [
+            "5e8c641feb97721e"
+        ],
+        "x": 215,
+        "y": 380,
+        "wires": [
+            [
+                "xml1"
+            ]
+        ]
+    },
+    {
+        "id": "0c6dddae8ea3386c",
+        "type": "comment",
+        "z": "51c0249ad6358e79",
+        "g": "a710609431dd3f20",
+        "name": "Recording Description",
+        "info": "",
+        "x": 1300,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "407bf0370558e23f",
+        "type": "link in",
+        "z": "51c0249ad6358e79",
+        "name": "link in 4",
+        "links": [
+            "b14a6e8383b75b9c"
+        ],
+        "x": 115,
+        "y": 500,
+        "wires": [
+            [
+                "4313ee30f0e633a0"
+            ]
+        ]
+    },
+    {
+        "id": "4313ee30f0e633a0",
+        "type": "change",
+        "z": "51c0249ad6358e79",
+        "g": "79e60d8e5ad27335",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "recording",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 500,
+        "wires": [
+            [
+                "bc7af0d2002dbab1"
+            ]
+        ]
+    },
+    {
+        "id": "bc7af0d2002dbab1",
+        "type": "function",
+        "z": "51c0249ad6358e79",
+        "g": "79e60d8e5ad27335",
+        "name": "Export matroska URL",
+        "func": "msg.url = 'http://' + msg.cameraAddress + '/axis-cgi/record/export/exportrecording.cgi?schemaversion=1&exportformat=matroska';\nmsg.url += '&recordingid=' + msg.payload.id;\nmsg.url += '&diskid=' + msg.payload.disk;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 500,
+        "wires": [
+            [
+                "7b633c6f165e1afe"
+            ]
+        ]
+    },
+    {
+        "id": "7b633c6f165e1afe",
+        "type": "http request",
+        "z": "51c0249ad6358e79",
+        "g": "ba822825b6147c01",
+        "name": "GET /record/export/exportrecording.cgi",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "digest",
+        "senderr": true,
+        "headers": [],
+        "x": 870,
+        "y": 500,
+        "wires": [
+            [
+                "60f83e2fe965a23b"
+            ]
+        ]
+    },
+    {
+        "id": "fa63f574dac8ed05",
+        "type": "comment",
+        "z": "51c0249ad6358e79",
+        "g": "79e60d8e5ad27335",
+        "name": "Video data and msg.recording (info)",
+        "info": "",
+        "x": 1480,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "5f427ca1f81bc5b7",
+        "type": "link out",
+        "z": "51c0249ad6358e79",
+        "name": "Recording Description",
+        "mode": "link",
+        "links": [
+            "449e3c710b282d7a"
+        ],
+        "x": 1695,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "449e3c710b282d7a",
+        "type": "link in",
+        "z": "51c0249ad6358e79",
+        "name": "link in 6",
+        "links": [
+            "5f427ca1f81bc5b7"
+        ],
+        "x": 115,
+        "y": 640,
+        "wires": [
+            [
+                "383b563e8309e460"
+            ]
+        ]
+    },
+    {
+        "id": "383b563e8309e460",
+        "type": "function",
+        "z": "51c0249ad6358e79",
+        "g": "7153051292f2dd8a",
+        "name": "Local Filename ",
+        "func": "function epochToHHMMSS(epochMs) {\n    const date = new Date(epochMs);\n    const pad = n => n.toString().padStart(2, '0');\n    const hh = pad(date.getHours());\n    const mm = pad(date.getMinutes());\n    const ss = pad(date.getSeconds());\n    return `${hh}-${mm}-${ss}`;\n}\n\nvar subDir = new Date(msg.recording.start).toISOString().slice(0,10);\nvar filename = epochToHHMMSS(msg.recording.start)\n\nmsg.filepath = \"./camera_recordings/\" + subDir + \"/\" + filename + \".mkv\";\nmsg.mp4File = \"./camera_recordings/\" + subDir + \"/\" + filename + \".mp4\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 640,
+        "wires": [
+            [
+                "f1b76e10e101481d"
+            ]
+        ]
+    },
+    {
+        "id": "f1b76e10e101481d",
+        "type": "file",
+        "z": "51c0249ad6358e79",
+        "g": "7153051292f2dd8a",
+        "name": "",
+        "filename": "filepath",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 480,
+        "y": 640,
+        "wires": [
+            [
+                "34beab97ed0b112b"
+            ]
+        ]
+    },
+    {
+        "id": "34beab97ed0b112b",
+        "type": "function",
+        "z": "51c0249ad6358e79",
+        "g": "7153051292f2dd8a",
+        "name": "Convert to MP4",
+        "func": "// Ensure inputs are present\nif (!msg.filepath || !msg.mp4File) {\n    node.error(\"Missing input path. Need msg.filepath and msg.mp4File.\", msg);\n    return null;\n}\n\n// Build the parameter string\nmsg.payload = `-y -i \"${msg.filepath}\" -c copy \"${msg.mp4File}\"`;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 640,
+        "wires": [
+            [
+                "4ed3c3b5fa26c859"
+            ]
+        ]
+    },
+    {
+        "id": "4ed3c3b5fa26c859",
+        "type": "exec",
+        "z": "51c0249ad6358e79",
+        "g": "7153051292f2dd8a",
+        "command": "ffmpeg",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 890,
+        "y": 640,
+        "wires": [
+            [],
+            [],
+            [
+                "ada30ad7701a0512"
+            ]
+        ]
+    },
+    {
+        "id": "60f83e2fe965a23b",
+        "type": "function",
+        "z": "51c0249ad6358e79",
+        "g": "79e60d8e5ad27335",
+        "name": "Validation",
+        "func": "// Error from HTTP node? (comes from 2nd output)\nif (msg.error || msg.statusCode !== 200) {\n    node.error(\"HTTP error: \" + (msg.statusCode || \"(no status code)\"), msg);\n}\n\n// Check file size (not too small for a video file)\nif (!msg.payload || msg.payload.length < 10000) { // 10 KB threshold. Adjust as needed.\n    const textSample = msg.payload.toString('utf8', 0, 50);\n    if (textSample.match(/<html|error|unauthorized/i)) {\n        node.error(\"Unexpected response (HTML or error): \" + textSample, msg);\n        return null;\n    }\n    node.warn(\"Downloaded file is suspiciously small. Check camera and credentials.\");\n}\n\nreturn msg; // Pass to next node for file write\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 500,
+        "wires": [
+            [
+                "5f427ca1f81bc5b7"
+            ]
+        ]
+    },
+    {
+        "id": "ada30ad7701a0512",
+        "type": "switch",
+        "z": "51c0249ad6358e79",
+        "g": "7153051292f2dd8a",
+        "name": "",
+        "property": "payload.code",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1050,
+        "y": 640,
+        "wires": [
+            [
+                "eb8457e019898710"
+            ]
+        ]
+    },
+    {
+        "id": "eb8457e019898710",
+        "type": "file",
+        "z": "51c0249ad6358e79",
+        "g": "7153051292f2dd8a",
+        "name": "Remove MKV",
+        "filename": "filepath",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "delete",
+        "encoding": "none",
+        "x": 1240,
+        "y": 640,
+        "wires": [
+            [
+                "8e39fdc6f2841e71"
+            ]
+        ]
+    },
+    {
+        "id": "8e39fdc6f2841e71",
+        "type": "function",
+        "z": "51c0249ad6358e79",
+        "g": "7153051292f2dd8a",
+        "name": "Recording info",
+        "func": "msg.payload = msg.recording;\nmsg.payload.file = msg.mp4File;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 640,
+        "wires": [
+            [
+                "318da53f7f691de6"
+            ]
+        ]
+    },
+    {
+        "id": "318da53f7f691de6",
+        "type": "link out",
+        "z": "51c0249ad6358e79",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [
+            "9fee9153aa8a8fce",
+            "70809a4b83743a50"
+        ],
+        "x": 1655,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "9fee9153aa8a8fce",
+        "type": "link in",
+        "z": "51c0249ad6358e79",
+        "name": "link in 2",
+        "links": [
+            "318da53f7f691de6"
+        ],
+        "x": 115,
+        "y": 780,
+        "wires": [
+            [
+                "4378143688e92568"
+            ]
+        ]
+    },
+    {
+        "id": "4378143688e92568",
+        "type": "function",
+        "z": "51c0249ad6358e79",
+        "g": "33332336d55ce9ec",
+        "name": "Remove URL",
+        "func": "msg.url = 'http://' + msg.cameraAddress + '/axis-cgi/record/remove.cgi';\nmsg.url += '?recordingid=' + msg.recording.id;\nmsg.url += '&diskid=' + msg.recording.disk;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 780,
+        "wires": [
+            [
+                "68635abb6dd3253c"
+            ]
+        ]
+    },
+    {
+        "id": "68635abb6dd3253c",
+        "type": "http request",
+        "z": "51c0249ad6358e79",
+        "g": "4698ba2f31377cb8",
+        "name": "GET /axis-cgi/record/remove.cgi",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "digest",
+        "senderr": true,
+        "headers": [],
+        "x": 570,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70809a4b83743a50",
+        "type": "link in",
+        "z": "51c0249ad6358e79",
+        "name": "link in 5",
+        "links": [
+            "318da53f7f691de6"
+        ],
+        "x": 115,
+        "y": 900,
+        "wires": [
+            [
+                "d9000dc95e47a1ea"
+            ]
+        ]
+    },
+    {
+        "id": "d9000dc95e47a1ea",
+        "type": "function",
+        "z": "51c0249ad6358e79",
+        "g": "a5bc4ba6e4ab8c54",
+        "name": "Add info crecording info",
+        "func": "var recordings = flow.get(\"recordings\") || [];\nrecordings.push(msg.payload);\nflow.set(\"recordings\",recordings);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 900,
+        "wires": [
+            [
+                "ea4a0683d9a56b9e"
+            ]
+        ]
+    },
+    {
+        "id": "7a89deec31ad1f1b",
+        "type": "file in",
+        "z": "51c0249ad6358e79",
+        "g": "4196609156173f07",
+        "name": "",
+        "filename": "./camera_recordings/recordings.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 590,
+        "y": 160,
+        "wires": [
+            [
+                "9bf01144cd1ebf73"
+            ]
+        ]
+    },
+    {
+        "id": "dcf785ae6b632aa5",
+        "type": "change",
+        "z": "51c0249ad6358e79",
+        "g": "4196609156173f07",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "recordings",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "maxCounter",
+                "pt": "flow",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1060,
+        "y": 160,
+        "wires": [
+            [
+                "b485f66ffc88c4a1"
+            ]
+        ]
+    },
+    {
+        "id": "9bf01144cd1ebf73",
+        "type": "json",
+        "z": "51c0249ad6358e79",
+        "g": "4196609156173f07",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 850,
+        "y": 160,
+        "wires": [
+            [
+                "dcf785ae6b632aa5"
+            ]
+        ]
+    },
+    {
+        "id": "6b6ac37fb58c9f17",
+        "type": "link in",
+        "z": "51c0249ad6358e79",
+        "name": "link in 15",
+        "links": [
+            "5402e874501a2829",
+            "b485f66ffc88c4a1"
+        ],
+        "x": 115,
+        "y": 280,
+        "wires": [
+            [
+                "cd654b9b4972b139"
+            ]
+        ]
+    },
+    {
+        "id": "b485f66ffc88c4a1",
+        "type": "link out",
+        "z": "51c0249ad6358e79",
+        "name": "link out 13",
+        "mode": "link",
+        "links": [
+            "6b6ac37fb58c9f17"
+        ],
+        "x": 1225,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "ea4a0683d9a56b9e",
+        "type": "trigger",
+        "z": "51c0249ad6358e79",
+        "g": "a5bc4ba6e4ab8c54",
+        "name": "",
+        "op1": "",
+        "op2": "Done",
+        "op1type": "nul",
+        "op2type": "str",
+        "duration": "4",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 540,
+        "y": 900,
+        "wires": [
+            [
+                "31d5a9061d31581c"
+            ]
+        ]
+    },
+    {
+        "id": "31d5a9061d31581c",
+        "type": "change",
+        "z": "51c0249ad6358e79",
+        "g": "a5bc4ba6e4ab8c54",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "recordings",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 900,
+        "wires": [
+            [
+                "8f72863dfe8a9ed6"
+            ]
+        ]
+    },
+    {
+        "id": "8f72863dfe8a9ed6",
+        "type": "json",
+        "z": "51c0249ad6358e79",
+        "g": "a5bc4ba6e4ab8c54",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": true,
+        "x": 910,
+        "y": 900,
+        "wires": [
+            [
+                "65ce4b0554f5db50"
+            ]
+        ]
+    },
+    {
+        "id": "65ce4b0554f5db50",
+        "type": "file",
+        "z": "51c0249ad6358e79",
+        "g": "a5bc4ba6e4ab8c54",
+        "name": "",
+        "filename": "./camera_recordings/recordings.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1160,
+        "y": 900,
+        "wires": [
+            [
+                "527bcc561a33c0e1"
+            ]
+        ]
+    },
+    {
+        "id": "72a14da42b56b7d7",
+        "type": "function",
+        "z": "51c0249ad6358e79",
+        "g": "a710609431dd3f20",
+        "name": "Throttle",
+        "func": "var maxCounter = flow.get(\"maxCounter\") || 1;\nif( maxCounter > 5 )\n    return;\nmaxCounter++;\nflow.set(\"maxCounter\",maxCounter);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 380,
+        "wires": [
+            [
+                "b14a6e8383b75b9c"
+            ]
+        ]
+    },
+    {
+        "id": "527bcc561a33c0e1",
+        "type": "change",
+        "z": "51c0249ad6358e79",
+        "g": "a5bc4ba6e4ab8c54",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "recordings",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1440,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "71ba6e041db967cc",
+        "type": "comment",
+        "z": "51c0249ad6358e79",
+        "name": "Read Me",
+        "info": "# Export Camera Recordings\nVersion 1.0\n\nChecks if cameras have any recordings.  If so, export them to local disk, convert to\nMP4 and and remove the recording from the camwera.\n\nNote that the flow will throttle at max 5 recordings being processed in the flow.\nThe reason is to minimize resource exhastions. You may add the throttle number, your system may be able to handle more.\n",
+        "x": 260,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "681ea8d85af76c41",
+        "type": "catch",
+        "z": "51c0249ad6358e79",
+        "g": "2a8dd2dea13cc98c",
+        "name": "If file index file does not exist",
+        "scope": [
+            "7a89deec31ad1f1b"
+        ],
+        "uncaught": false,
+        "x": 320,
+        "y": 1000,
+        "wires": [
+            [
+                "699a634e439a01f0"
+            ]
+        ]
+    },
+    {
+        "id": "699a634e439a01f0",
+        "type": "change",
+        "z": "51c0249ad6358e79",
+        "g": "2a8dd2dea13cc98c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "recordings",
+                "pt": "flow",
+                "to": "[]",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "maxCounter",
+                "pt": "flow",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 1000,
+        "wires": [
+            [
+                "5402e874501a2829"
+            ]
+        ]
+    },
+    {
+        "id": "5402e874501a2829",
+        "type": "link out",
+        "z": "51c0249ad6358e79",
+        "name": "link out 5",
+        "mode": "link",
+        "links": [
+            "6b6ac37fb58c9f17"
+        ],
+        "x": 745,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "ed66bd9b9be2826c",
+        "type": "catch",
+        "z": "51c0249ad6358e79",
+        "g": "2a8dd2dea13cc98c",
+        "name": "",
+        "scope": null,
+        "uncaught": true,
+        "x": 280,
+        "y": 1060,
+        "wires": [
+            [
+                "df86d69e36771d72"
+            ]
+        ]
+    },
+    {
+        "id": "df86d69e36771d72",
+        "type": "debug",
+        "z": "51c0249ad6358e79",
+        "g": "2a8dd2dea13cc98c",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 1060,
+        "wires": []
+    }
+]
