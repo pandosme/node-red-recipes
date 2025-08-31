@@ -359,7 +359,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "[\n  \"front.internal\"\n]",
+        "template": "[\n  \"1.2.3.4\",\n  \"my.camera.com\"\n]",
         "output": "json",
         "x": 320,
         "y": 280,
