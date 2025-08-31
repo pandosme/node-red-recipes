@@ -105,6 +105,3 @@ The flow will:
 6. Log the new recording’s information in `./camera_recordings/recordings.json`
 
 ***
-<br/>
-![image](https://api.juhlin.me/image/flow-export-sd)
-
