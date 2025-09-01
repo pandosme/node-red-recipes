@@ -68,10 +68,10 @@ This recipe provides a dashboard to visualize live video, track ambient temperat
 ## Screenshots
 
 **Dashboard Example:**  
-
+![Flow](./ThermalMonitoringDashboard.jpeg)
 
 **Flow Overview:**  
-
+![Flow](./ThermalMonitoringFlow.jpeg)
 
 ***
 
@@ -93,3 +93,4 @@ The flow enables you to:
 
 **Ready to use!**  
 Import, configure, and go—visualize and manage thermal alarms with ease.
+
