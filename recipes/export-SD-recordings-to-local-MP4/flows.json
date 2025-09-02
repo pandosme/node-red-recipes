@@ -29,11 +29,13 @@
             "1c52b4a48004699b",
             "split1",
             "0c6dddae8ea3386c",
-            "72a14da42b56b7d7"
+            "72a14da42b56b7d7",
+            "ec4195d1c026994e",
+            "f5d4a4a1f9eb086b"
         ],
         "x": 168,
         "y": 213,
-        "w": 1258,
+        "w": 1478,
         "h": 208
     },
     {
@@ -101,7 +103,7 @@
         ],
         "x": 174,
         "y": 713,
-        "w": 641,
+        "w": 640,
         "h": 134
     },
     {
@@ -207,7 +209,7 @@
         ],
         "x": 954,
         "y": 239,
-        "w": 375,
+        "w": 374,
         "h": 82
     },
     {
@@ -227,7 +229,7 @@
         ],
         "x": 694,
         "y": 459,
-        "w": 375,
+        "w": 374,
         "h": 82
     },
     {
@@ -247,7 +249,7 @@
         ],
         "x": 414,
         "y": 739,
-        "w": 375,
+        "w": 374,
         "h": 82
     },
     {
@@ -282,7 +284,8 @@
         "y": 380,
         "wires": [
             [
-                "function1"
+                "function1",
+                "f5d4a4a1f9eb086b"
             ]
         ]
     },
@@ -292,7 +295,7 @@
         "z": "51c0249ad6358e79",
         "g": "a710609431dd3f20",
         "name": "Extract Recording IDs",
-        "func": "var formatFromHell = msg.payload.root.recordings[0].recording;\nvar recordings = [];\nformatFromHell.forEach(function(item) {\n    var recording = {\n        camera: msg.cameraAddress,\n        id: item[\"$\"].recordingid,\n        disk: item[\"$\"].diskid,\n        event: item[\"$\"].eventid,\n        start: new Date(item[\"$\"].starttime).getTime(),\n        stop: new Date(item[\"$\"].stoptime).getTime(),\n        resolution: item.video[0][\"$\"].resolution,\n        framerate: parseInt(item.video[0][\"$\"].framerate.split(\":\")[0])\n    }\n    recording.duration = (recording.stop - recording.start)/1000;\n    recordings.push(recording)\n});\nmsg.payload = recordings;\nreturn msg;\n",
+        "func": "if( !msg.payload.root.recordings[0].hasOwnProperty(\"recording\") )\n    return;\nvar formatFromHell = msg.payload.root.recordings[0].recording;\nvar recordings = [];\nnode.warn(formatFromHell);\nformatFromHell.forEach(function(item) {\n    var recording = {\n        camera: msg.cameraAddress,\n        id: item[\"$\"].recordingid,\n        disk: item[\"$\"].diskid,\n        event: item[\"$\"].eventid,\n        start: new Date(item[\"$\"].starttime).getTime(),\n        stop: new Date(item[\"$\"].stoptime).getTime(),\n        resolution: item.video[0][\"$\"].resolution,\n        framerate: parseInt(item.video[0][\"$\"].framerate.split(\":\")[0])\n    }\n    recording.duration = (recording.stop - recording.start)/1000;\n    recordings.push(recording)\n});\nmsg.payload = recordings;\nreturn msg;\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -411,7 +414,7 @@
         "y": 280,
         "wires": [
             [
-                "5e8c641feb97721e"
+                "ec4195d1c026994e"
             ]
         ]
     },
@@ -424,7 +427,7 @@
         "links": [
             "407bf0370558e23f"
         ],
-        "x": 1485,
+        "x": 1675,
         "y": 380,
         "wires": []
     },
@@ -438,8 +441,8 @@
         "links": [
             "1c52b4a48004699b"
         ],
-        "x": 1385,
-        "y": 280,
+        "x": 1605,
+        "y": 320,
         "wires": []
     },
     {
@@ -1227,11 +1230,70 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "error",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 480,
         "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "ec4195d1c026994e",
+        "type": "function",
+        "z": "51c0249ad6358e79",
+        "g": "a710609431dd3f20",
+        "name": "Check for error",
+        "func": "if( msg.statusCode !== 200 || msg.payload.search(\"Error\") >= 0 ) {\n    node.send([msg,null]);\n    return;\n}\nnode.send([null,msg]);\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 280,
+        "wires": [
+            [
+                "8c077104a42e8dfa"
+            ],
+            [
+                "5e8c641feb97721e"
+            ]
+        ]
+    },
+    {
+        "id": "8c077104a42e8dfa",
+        "type": "debug",
+        "z": "51c0249ad6358e79",
+        "name": "Error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1730,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "f5d4a4a1f9eb086b",
+        "type": "debug",
+        "z": "51c0249ad6358e79",
+        "g": "a710609431dd3f20",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 340,
         "wires": []
     }
 ]
