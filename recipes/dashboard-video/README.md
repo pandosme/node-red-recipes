@@ -14,7 +14,7 @@ For visualizing object-detection-motion you will need to have installed DataQ AC
      [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard)
 
 2. **Import the Flow**  
-   - Download [`flows.json`](./flows.json)
+   - Download [`flow.json`](./flow.json)
    - In Node-RED, use menu: `Import` > paste JSON or upload file
 
 3. **Modify the flow for your environment**  
@@ -35,3 +35,4 @@ For visualizing object-detection-motion you will need to have installed DataQ AC
 ![Flow screenshot](./dashboard-capture.JPG)
 
 ***
+
